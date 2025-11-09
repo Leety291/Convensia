@@ -1,0 +1,139 @@
+:root {
+  --red: #ff453a;
+  --blue: #0a84ff;
+  --yellow: #ffcc00;
+  --black: #333;
+  --gray: #f8f8fa;
+  --white: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  background: var(--white);
+  color: var(--black);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h2 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin: 0 0 30px;
+}
+
+.shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.shape {
+  position: absolute;
+  border-radius: 30%;
+  opacity: 0.1;
+  animation: float 12s infinite ease-in-out, spin 20s infinite linear;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-25px); }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.games {
+  padding: 60px 20px;
+  background: var(--gray);
+  text-align: center;
+}
+
+.games h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.game-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+.card {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px var(--shadow);
+  width: 350px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eee;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px var(--shadow);
+}
+.thumb {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.card h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.card button {
+  background: var(--blue);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.card button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+footer {
+  background: var(--gray);
+  color: #888;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 1rem;
+}
