@@ -1,10 +1,10 @@
-// 🎮 게임 데이터
+// 게임 데이터
 const games = [
   {
-    title: "Neon Survival",
-    description: "타워를 지키며 적을 처치하는 네온 스타일 디펜스 게임",
+    title: "닷지",
+    description: "날아오는 화살을 피해 오래 생존하는 게임",
     image: "https://yourimageurl.com/neon-survival.png",
-    link: "https://leety291.github.io/neon-survival/",
+    link: "https://leety291.github.io/Dodgespace/",
   },
   {
     title: "ThrowDodge",
@@ -20,7 +20,7 @@ const games = [
   },
 ];
 
-// 🧱 게임 카드 생성
+// 게임 카드 생성
 const gameList = document.getElementById("game-list");
 games.forEach((game) => {
   const card = document.createElement("div");
@@ -35,7 +35,7 @@ games.forEach((game) => {
   gameList.appendChild(card);
 });
 
-// 🎨 도형 자동 추가
+// 도형 자동 추가
 const shapesContainer = document.querySelector(".shapes");
 
 // 추가적인 도형들을 정적인 위치와 스타일로 정의합니다.
