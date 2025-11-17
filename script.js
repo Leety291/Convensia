@@ -7,10 +7,10 @@ const games = [
     link: "https://leety291.github.io/Dodgespace/",
   },
   {
-    title: "ThrowDodge",
-    description: "던지고 피하며 승리를 쟁취하라! 반응속도 게임",
+    title: "로봇 강화하기",
+    description: "로봇을 강화하는 게임",
     image: "https://yourimageurl.com/throwdodge.png",
-    link: "https://leety291.github.io/throwdodge/",
+    link: "https://hajun0206.github.io/ReinforceSnackBuild/",
   },
   {
     title: "Color Blocks",
@@ -67,3 +67,4 @@ additionalShapes.forEach(data => {
     }
     shapesContainer.appendChild(shape);
 });
+
