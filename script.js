@@ -2,7 +2,7 @@
 const games = [
   {
     title: "닷지",
-    description: "날아오는 화살을 피해 오래 생존하는 게임",
+    description: "날아오는 적을 피해 오래 생존하는 게임",
     image: "https://yourimageurl.com/neon-survival.png",
     link: "https://leety291.github.io/Dodgespace/",
   },
@@ -13,10 +13,10 @@ const games = [
     link: "https://hajun0206.github.io/ReinforceSnackBuild/",
   },
   {
-    title: "Color Blocks",
-    description: "색을 맞춰 블록을 없애는 직관적인 퍼즐 게임",
+    title: "Arrow Defence",
+    description: "날아오는 화살을 막는 게임",
     image: "https://yourimageurl.com/color-blocks.png",
-    link: "https://leety291.github.io/color-blocks/",
+    link: "https://hajun0206.github.io/ArrowDefence2D-build/",
   },
 ];
 
